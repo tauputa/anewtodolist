@@ -45,12 +45,6 @@ object Build : BuildType({
             runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
     }
-    features {
-        freeDiskSpace {
-            requiredSpace = "6gb"
-            failBuild = true
-        }
-    }
     triggers {
         vcs {
             quietPeriodMode = VcsTrigger.QuietPeriodMode.USE_CUSTOM
